@@ -1,0 +1,34 @@
+### A. Basic prompt
+POST http://localhost:8080/api/ai/ask
+Content-Type: application/json
+
+{
+  "question": "Explain Spring AI in simple terms for a student learning Spring Boot."
+}
+
+### B. Structured output
+POST http://localhost:8080/api/ai/study-plan
+Content-Type: application/json
+
+{
+  "studentName": "Mia",
+  "topic": "RAG in Spring AI",
+  "problem": "I understand prompts but I do not understand how RAG works.",
+  "goal": "Be ready for the Week 10 lab."
+}
+
+### C. Context stuffing
+POST http://localhost:8080/api/ai/context-help
+Content-Type: application/json
+
+{
+  "question": "What is the difference between stuffing the prompt and RAG?"
+}
+
+### D. RAG
+POST http://localhost:8080/api/ai/rag-help
+Content-Type: application/json
+
+{
+  "question": "Why is RAG different from basic prompting?"
+}
